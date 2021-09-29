@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :books
 
   root 'homes#top'
-  get 'home/about' => 'homes#about'
+  get 'home/about' => 'homes#about', as: 'about'
 end
